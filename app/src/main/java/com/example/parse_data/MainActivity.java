@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     private void getString(RequestQueue queue) {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, response -> {
             Log.d("Main", "xxx" + response.substring(0,500));
+            Log.d("Main", "xxx" + "aaa");
         }, error -> {
             Log.d("Main", "fail");
         });
